@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class MobileBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double base = sc.nextDouble();
+        double extraGB = sc.nextDouble();
+        double rate = sc.nextDouble();
+        double taxPercent = sc.nextDouble();
+        double total = base + (extraGB * rate);
+        double finalBill = total + (total * taxPercent / 100);
+        System.out.println("Total Bill = " + finalBill);
+    }
+}
+
