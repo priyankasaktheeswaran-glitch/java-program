@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class FuelTrip {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double distance = sc.nextDouble();
+        double mileage = sc.nextDouble();
+        double fuelPrice = sc.nextDouble();
+        double toll = sc.nextDouble();
+        double fuelCost = (distance / mileage) * fuelPrice;
+        double total = fuelCost + toll;
+        System.out.println("Total Trip Cost = " + total);
+    }
+}
