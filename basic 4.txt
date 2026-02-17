@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Scholarship {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double tuition = sc.nextDouble();
+        double scholarship = sc.nextDouble();
+        double exam = sc.nextDouble();
+        double library = sc.nextDouble();
+        double discounted = tuition - (tuition * scholarship / 100);
+        double finalFee = discounted + exam + library;
+        System.out.println("Final Payable Fee = " + finalFee);
+    }
+}
