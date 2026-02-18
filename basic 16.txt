@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class RailwayRevenue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double genPass = sc.nextDouble();
+        double genFare = sc.nextDouble();
+        double acPass = sc.nextDouble();
+        double acFare = sc.nextDouble();
+        double platform = sc.nextDouble();
+        double maintenance = sc.nextDouble();
+        double fuel = sc.nextDouble();
+        double revenue = (genPass * genFare) + (acPass * acFare) + 
+        platform - maintenance - fuel;
+        System.out.println("Net Railway Revenue = " + revenue);
+    }
+}
