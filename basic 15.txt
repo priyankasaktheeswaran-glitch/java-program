@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class HotelRevenue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double rooms = sc.nextDouble();
+        double price = sc.nextDouble();
+        double service = sc.nextDouble();
+        double commission = sc.nextDouble();
+        double revenue = (rooms * price) + service - commission;
+        System.out.println("Total Revenue = " + revenue);
+    }
+}
