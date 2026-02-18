@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class GymSalary {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double base = sc.nextDouble();
+        double sessions = sc.nextDouble();
+        double payPerSession = sc.nextDouble();
+        double bonus = sc.nextDouble();
+        double maintenance = sc.nextDouble();
+        double salary = base + (sessions * payPerSession) + bonus - maintenance;
+        System.out.println("Final Salary = " + salary);
+    }
+}
